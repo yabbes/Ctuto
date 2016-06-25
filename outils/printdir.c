@@ -19,23 +19,22 @@ int main (int argc, char *argv[])
 	if (argv[1] == NULL)
 	{ 
 		printf("no argv was given"
-				"printing contents of current directory");
+				"printing contents of current directory\n");
 		sprintf(path, ".");
 	}else{
 		//set path with first argv
 		strcpy(path, argv[1]);
-		printf("printing contents of dir %s",
+		printf("printing contents of dir %s\n",
 					path);
 	}
 	dir = opendir(path);
 
 	if (dir == NULL) 
 	{
-		printf("Error opening directory");
+		printf("Error opening directory\n");
 		exit(1);
 
 	}
-	printf("printing items in current dir\n");
 
 	while ( (sd=readdir(dir)) != NULL )
 		{
