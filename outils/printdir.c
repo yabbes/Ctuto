@@ -15,7 +15,6 @@ int main (int argc, char *argv[])
 	struct dirent *sd;
 	char path[50];
 	
-
 	// if argv[1] is empty set . current directory
 	if (argv[1] == NULL)
 	{ 
@@ -28,27 +27,22 @@ int main (int argc, char *argv[])
 		printf("printing contents of dir %s\n",
 					path);
 	}
+
 	dir = opendir(path);
 
 	if (dir == NULL) 
 	{
 		printf("Error opening directory\n");
 		exit(1);
-
 	}
 
 	while ( (sd=readdir(dir)) != NULL )
 		{
 			printf(">> %s :(inode) %d (len) %d \n", 
 			sd->d_name, sd->d_ino, sd->d_reclen);
-		
-
 		}
-
 
 	closedir(dir);
 
-
-	
 	return 0;
 }
