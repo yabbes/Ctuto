@@ -15,6 +15,7 @@ int main (int argc, char *argv[])
 	struct dirent *sd;
 	char path[50];
 	
+
 	// if argv[1] is empty set . current directory
 	if (argv[1] == NULL)
 	{ 
