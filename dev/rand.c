@@ -6,8 +6,8 @@
 
 void generateTwoRandomNums(int* rand1, int* rand2){
 	
-	*rand1 = rand() % 50 +1 ;
-	*rand2 = rand() % 50 +1;
+	*rand1 = rand() % 100 +1 ;
+	*rand2 = rand() % 100 +1;
 	
 	printf("New rand1 in function = %d\n\n", *rand1);
 	
