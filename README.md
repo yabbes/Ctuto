@@ -6,4 +6,5 @@ I tidied this up today, moved all the messy unsorted stuff I am doing in C follo
 Occasionally I might find that some things evolved into "useful" little programs-
 these can be found in outils/
 
-
+printdir : printing the contents of the working directory by default and then giving a directory as parameter
+[![asciicast](https://asciinema.org/a/5mnt5ozxf8eajlogireil5e6v.png)](https://asciinema.org/a/5mnt5ozxf8eajlogireil5e6v)
